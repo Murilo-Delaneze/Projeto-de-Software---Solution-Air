@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Solutions AR - Login/Cadastro</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="banner">
+      <img src="imagem do site.png" alt="Ar Condicionado Solutions AR">
+    </div>
+
+    <div class="form-container">
+      <div class="logo">
+        <img src="Logo.jpg" alt="Solutions AR Logo">
+      </div>
+
+      <div class="card-form">
+        <div class="tabs"> 
+          <a href="index.html" class="tab-btn active">Cadastrar</a> 
+          <a href="index copy.html" class="tab-btn">Entrar</a> 
+        </div>
+
+        <form action="index copy.html" method="POST">
+          <div class="input-group">
+            <label>Número de celular ou email:</label>
+            <input type="email" name="usuario" required>
+          </div>
+
+          <div class="input-group">
+            <label>Senha:</label>
+            <input type="password" name="senha" minlength="8" required>
+          </div>
+
+          <div class="input-group">
+              <label>Escolha um Sensor:</label>
+              <select name="sensores" required>
+                <option value="1">PMS7003</option>
+                <option value="2">SCD41</option>
+                <option value="3">AGS10</option>
+                <option value="4">BMP280</option>
+                <option value="5">CCS811</option>
+                <option value="6">MQ-135</option>
+                <option value="7">DHT11</option>
+                <option value="8">BMP280</option>
+              </select>
+            </div>
+
+          <button type="submit" class="submit-btn">Criar Conta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
